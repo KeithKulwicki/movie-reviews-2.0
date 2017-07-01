@@ -10,6 +10,7 @@ import javax.persistence.OneToMany;
 @Entity
 public class Genre {
 
+	// Instance variables
 	@Id
 	@GeneratedValue
 	public Long id;
