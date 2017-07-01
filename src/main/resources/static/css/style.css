@@ -14,19 +14,19 @@ h1{
 	font-size:45px;
 	background-color: #F0E68C
 }
-/* -- reviews specific Styling -- */
-.review-list{
+/* /* -- reviews specific Styling -- */
+/* .review-list{
 	color:#F0E68C;
 	text-decoration: none;
 	font-size:25px;
 	padding: 1px;
-}
-.rvw-list-out{
+} */
+/* .rvw-list-out{
 	margin-left: 50px;
 	background-color: #800000;
 	padding: 1px;
-}
-/* -- oneReview specific Styling -- */
+} */
+/* -- oneReview specific Styling --
 .synopsis{
 	font-style: italic;
 	font-size:15px;
@@ -63,7 +63,7 @@ h1{
 	color: #F0E68C; font-style: italic;
 	background-color: #800000;
 	margin-left: 50px;
-}
+} */
 
 /* --- FOOTER --- */
 .signature {

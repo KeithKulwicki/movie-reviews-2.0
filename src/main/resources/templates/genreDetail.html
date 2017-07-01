@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title th:text="${genre.name}" />
+<link rel="stylesheet" type="text/css" href="/css/style.css"></link>
+</head>
+<body>
+	<header>
+		<a class="backtomain" th:href="@{/genres(title=${movies})}">Back
+			to Home</a>
+
+		<h1 th:text="'Movies for Genre ' + ${genre.name}" />
+	</header>
+
+	<article>
+		<a th:each="current: ${genre.movies}"
+			th:href="@{/movie/(id=${current.id})}">
+			<div th:text="${current.title}"></div>
+		</a>
+	</article>
+
+</body>
+<footer>
+	<p class="signature">Posted by Keith Kulwicki 2017</p>
+</footer>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Keith's Movie Lounge Reviews</title>
+<link rel="stylesheet" type="text/css" href="/css/style.css"></link>
+</head>
+<body>
+	<header>
+		<h1>Keith's Movie Lounge Reviews</h1>
+		<h2>Select genre:</h2>
+		<h3>List of Genres</h3>
+	</header>
+	<main class="content">
+	<article>
+		<a th:each="currentGenre: ${genres}"
+			th:href="@{/genre(id=${currentGenre.id})}"><div
+				th:text="${currentGenre.name}"></div></a>
+	</article>
+	</main>
+</body>
+<footer>
+	<p class="signature">Posted by Keith Kulwicki 2017</p>
+</footer>
+</html>
