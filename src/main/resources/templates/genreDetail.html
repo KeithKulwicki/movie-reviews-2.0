@@ -15,7 +15,8 @@
 	<article>
 		<a th:each="current: ${genre.movies}"
 			th:href="@{/movie/(id=${current.id})}">
-			<div th:text="${current.title}"></div>
+			<img class ="movie-poster" th:src="${current.imageUrl}" />
+
 		</a>
 	</article>
 

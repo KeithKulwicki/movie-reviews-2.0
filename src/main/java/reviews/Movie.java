@@ -25,6 +25,7 @@ public class Movie {
 	private String review;
 
 	private String imageUrl;
+	private String videoClip;
 
 	public Genre getGenre() {
 		return genre;
@@ -50,17 +51,21 @@ public class Movie {
 		return imageUrl != null;
 	}
 
+	public String getVideoClip() {
+		return videoClip;
+	}
+	
 	private Movie() {
 
 	}
 
-	public Movie(Genre genre, String title, String description, String review, String imageUrl) {
+	public Movie(Genre genre, String title, String description, String review, String imageUrl, String videoClip) {
 		this.genre = genre;
 		this.title = title;
 		this.description = description;
 		this.review = review;
 		this.imageUrl = imageUrl;
-
+		this.videoClip = videoClip;
 	}
 
 }

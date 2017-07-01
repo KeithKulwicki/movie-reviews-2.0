@@ -17,6 +17,7 @@ public class Genre {
 
 	private String name;
 	private String description;
+	private String genreImage;
 
 	@OneToMany(mappedBy = "genre")
 	private Set<Movie> movies;
@@ -28,14 +29,19 @@ public class Genre {
 	public String getDescription() {
 		return description;
 	}
+	
+	public String getGenreImage() {
+		return genreImage;
+	}
 
 	public Set<Movie> getMovies() {
 		return movies;
 	}
 
-	public Genre(String name, String description) {
+	public Genre(String name, String description, String genreImage) {
 		this.name = name;
 		this.description = description;
+		this.genreImage = genreImage;
 	}
 
 	private Genre() {

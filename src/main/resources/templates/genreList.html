@@ -7,14 +7,14 @@
 <body>
 	<header>
 		<h1>Keith's Movie Lounge Reviews</h1>
-		<h2>Select genre:</h2>
-		<h3>List of Genres</h3>
+		<h2 class ="select-genre">Select genre:</h2>
 	</header>
 	<main class="content">
 	<article>
-		<a th:each="currentGenre: ${genres}"
-			th:href="@{/genre(id=${currentGenre.id})}"><div
-				th:text="${currentGenre.name}"></div></a>
+		<a class = "currentGenre" th:each="currentGenre: ${genres}"
+			th:href="@{/genre(id=${currentGenre.id})}">
+				<img class ="genreImage" th:src="${currentGenre.genreImage}"></img>
+				</a>
 	</article>
 	</main>
 </body>

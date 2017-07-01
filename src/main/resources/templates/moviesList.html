@@ -5,13 +5,12 @@
 <link rel="stylesheet" type="text/css" href="/css/style.css"></link>
 </head>
 <body>
-	<h1>List of Movies</h1>
 
-	<ul>
-		<li th:each="currentMovie: ${movies}"><a
+	<h1>Keith's Movie Lounge List of Movies</h1>
+	<h2 >Select movie:</h2>
+	<p th:each="currentMovie: ${movies}"><a class ="movie-list"
 			th:href="@{/movie(id=${currentMovie.id})}"
-			th:text="${currentMovie.getTitle()}" /></li>
-	</ul>
+			th:text="${currentMovie.getTitle()}" /></p>
 
 </body>
 <footer class="footer">
