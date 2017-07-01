@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Keith's Movie Lounge</title>
+	<link rel="stylesheet" type="text/css" href="/css/main.css"></link>
+</head>
+<body>
+	<h1 class= "keiths-movie-lounge"> Keith's Movie Lounge</h1>
+	<a class="review-list" th:each="review: ${reviewsAsCollection}" th:href="@{http://localhost:8080/onereview/(id=${review.id})}"><div class="rvw-list-out" th:text="${review.title}"></div></a>
+
+</body>
+<footer class="footer"> 
+	<p class ="signature">Posted by Keith Kulwicki 2017</p>
+</footer>
+</html>

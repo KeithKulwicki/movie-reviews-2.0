@@ -1,0 +1,73 @@
+/* --- BACKGROUND IMAGE (ALL) --- */
+body{
+	background-image: url("/images/MovieTheater.jpg");
+	height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*--- HEADERS (ALL) ---*/
+h1{
+	color: #800000;
+	font-style: bold;
+	font-variant: small-caps;
+	font-size:45px;
+	background-color: #F0E68C
+}
+/* -- reviews specific Styling -- */
+.review-list{
+	color:#F0E68C;
+	text-decoration: none;
+	font-size:25px;
+	padding: 1px;
+}
+.rvw-list-out{
+	margin-left: 50px;
+	background-color: #800000;
+	padding: 1px;
+}
+/* -- oneReview specific Styling -- */
+.synopsis{
+	font-style: italic;
+	font-size:15px;
+	color:#F0E68C;
+	background-color: #800000;
+}
+.movie-stats{
+	font-size:20px;
+	color:#F0E68C;
+	background-color: #8B0000;
+	margin-left: 50px;
+}
+.movie-people{
+	font-size:25px;
+	color: #800000;
+	background-color: #F0E68C;
+	margin-left: 50px;
+}
+.movie-poster{
+	border: solid 3px #F0E68C;
+    height: 315px; width: auto;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+    margin-left: 50px;
+}
+.movie-clip{
+	border: solid 3px #F0E68C;;
+	height: 315px; width: 500px;
+	box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+	margin-left: 50px;
+	}
+.backtomain{
+	padding: 5px;
+	text-decoration: none;
+	color: #F0E68C; font-style: italic;
+	background-color: #800000;
+	margin-left: 50px;
+}
+
+/* --- FOOTER --- */
+.signature {
+	text-align: center;
+	color: white
+}
+

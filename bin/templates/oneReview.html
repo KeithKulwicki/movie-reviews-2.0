@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title th:text="${onereview.title}" />
+	<link rel="stylesheet" type="text/css" href="/css/main.css"></link>
+</head>
+<body>
+	<h1 class= "movie-title" th:text="${onereview.title}" />
+	<p class= "movie-stats" th:text="'Genres: ' + ${onereview.genre.title}"/>
+	<img class= "movie-poster" th:src="${onereview.imageUrl}"/>
+ 	<iframe class= "movie-clip" th:src="${onereview.movieClip}"></iframe>
+	<p class= "synopsis" th:text="'Synopsis:' + ${onereview.synopsis}" />
+<!-- 'Rated: ' + ${onereview.rating} + ' | ' + 	-->
+<!-- 'Runtime: ' + ${onereview.runtime} + ' | ' +	-->
+<!-- 	'Genres: ' + ${onereview.genre.title} + ' | ' + 	-->
+<!-- 'Release Date: ' + ${onereview.date}" />	-->
+<!-- <p class= "movie-people" th:text="'Stars: ' + ${onereview.content}  + ' | ' +	-->
+<!-- 'Director: ' + ${onereview.director}"/>	-->
+
+<!-- <p></p> -->
+	<a class = "backtomain" th:href="@{/reviews(title=${reviewAsCollection})}">Back to Keith's Movie Lounge</a>
+</body>
+<footer> 
+	<p class ="signature">Posted by Keith Kulwicki 2017</p>
+</footer>
+</html>
