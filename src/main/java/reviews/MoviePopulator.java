@@ -18,11 +18,13 @@ public class MoviePopulator implements CommandLineRunner {
 	public void run(String... args) throws Exception {
 
 		Genre drama = new Genre("Drama", "Serious tone or subject.", "/images/icon_drama.jpg");
-		Genre comedy = new Genre("Comedy", "Make 'em laugh films designed to elicit laughter from the audience..", "/images/icon_comedy.jpg");
+		Genre comedy = new Genre("Comedy", "Make 'em laugh films designed to elicit laughter from the audience..",
+				"/images/icon_comedy.jpg");
 		Genre action = new Genre("Action", "Involving danger and unknown risks.", "/images/icon_action.jpg");
 		Genre family = new Genre("Family", "Fun for the whole family.", "/images/icon_family.jpg");
-		Genre crime = new Genre("Crime", "Sinister actions of underworld figures operating outside the law.", "/images/icon_crime.jpg");
-		
+		Genre crime = new Genre("Crime", "Sinister actions of underworld figures operating outside the law.",
+				"/images/icon_crime.jpg");
+
 		genreRepo.save(action);
 		genreRepo.save(comedy);
 		genreRepo.save(crime);

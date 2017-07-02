@@ -6,18 +6,18 @@
 </head>
 <body>
 	<header>
-	<a class="backto" th:href="@{/genres(title=${movies})}">Back to
-	Keith's Movie Lounge List of Genres</a>
-	<h1>Keith's Movie Lounge List of Titles</h1>
-	<h2 >Select movie:</h2>
+		<a class="backto" th:href="@{/genres(title=${movies})}">Back to
+			Keith's Movie Lounge List of Genres</a>
+		<h1>Keith's Movie Lounge List of Titles</h1>
+		<h2>Select movie:</h2>
 	</header>
 	<article>
-	<a th:each="currentMovie: ${movies}"
-			th:href="@{/movie(id=${currentMovie.id})}">
-			]<img class ="titleImage" th:src="${currentMovie.imageUrl}"></img>
-			</a>
+		<a th:each="currentMovie: ${movies}"
+			th:href="@{/movie(id=${currentMovie.id})}"> ]<img
+			class="title-image" th:src="${currentMovie.imageUrl}"></img>
+		</a>
 	</article>
-			
+
 
 </body>
 <footer class="footer">

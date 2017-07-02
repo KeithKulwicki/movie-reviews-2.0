@@ -1,106 +1,105 @@
 /* --- BACKGROUND IMAGE (ALL) --- */
-body{
+body {
 	background-image: url("/images/MovieTheater.jpg");
 	height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white
-    
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white
 }
 /*--- HEADERS (ALL) ---*/
-h1{
+h1 {
+	background-color: #F0E68C;
 	color: #800000;
 	font-style: bold;
-	font-size:45px;
-	background-color: #F0E68C
+	font-size: 45px;
+}
+
+h2 {
+	background-color: #800000;
+	color: #F0E68C;
+	font-size: 25px;
+	font-style: italic;
+	margin-left: 50px;
+}
+
+.backto {
+	padding: 5px;
+	text-decoration: none;
+	color: #F0E68C;
+	font-style: italic;
+	background-color: #800000;
+	margin-left: 50px;
 }
 /* -- reviews specific Styling -- */
- .tag-line{
-	color: #800000;
-	font-style: oblique;
-	font-size:25px;
-	background-color: #F0E68C
- }
- .movie-list{
-	color:#F0E68C;
-	background-color: #800000;
-	text-decoration: none;
-	margin-left: 70px;
-	font-size:25px;
-	padding: 1px;
-} 
- .rvw-list-out{
+/* Movie Review & Genre Type */
+.movie-poster {
+	border: solid 3px #F0E68C;
+	height: 315px;
+	width: auto;
+	box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
 	margin-left: 50px;
-	background-color: #800000;
-	padding: 1px;
-} 
-
-.synopsis{
-	font-style: italic;
-	font-size:15px;
-	color:#F0E68C;
-	background-color: #800000;
 }
-.movie-stats{
-	font-size:20px;
-	color:#F0E68C;
+
+.movie-stats {
+	font-size: 20px;
+	color: #F0E68C;
 	background-color: #8B0000;
 	margin-left: 50px;
 }
-.movie-people{
-	font-size:25px;
+
+.movie-people {
+	font-size: 25px;
 	color: #800000;
 	background-color: #F0E68C;
 	margin-left: 50px;
 }
-.movie-poster{
-	border: solid 3px #F0E68C;
-    height: 315px; width: auto;
-    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
-    margin-left: 50px;
-}
-.titleImage{
-	border: solid 3px #F0E68C;
-    height: 150px; width: auto;
-    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
-    margin-left: 50px;
-}
 
-.movie-clip{
-	border: solid 3px #F0E68C;;
-	height: 315px; width: 500px;
+/* List of Titles */
+.title-image {
+	border: solid 3px #F0E68C;
+	height: 200px;
+	width: auto;
 	box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
 	margin-left: 50px;
-	}
-.backto{
-	padding: 5px;
-	text-decoration: none;
-	color: #F0E68C; font-style: italic;
-	background-color: #800000;
-	margin-left: 50px;
-} 
-h2{
-	font-size:25px;
-	color: #F0E68C;
-	background-color: #800000;
+	margin-bottom: 25px;
+}
+
+/* Movie Review */
+.movie-clip {
+	border: solid 3px #F0E68C;;
+	height: 315px;
+	width: 500px;
+	box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
 	margin-left: 50px;
 }
-.currentGenre{
-	font-size:25px;
-	color:#F0E68C;
+
+.synopsis {
+	font-style: italic;
+	font-size: 25px;
+	color: #F0E68C;
+	background-color: #800000;
+}
+
+.currentGenre {
+	font-size: 25px;
+	color: #F0E68C;
 	text-decoration: none;
 	margin-left: 50px;
 	padding: 1px;
 }
-.genreImage{
+
+.genreImage {
 	border: solid 3px #F0E68C;
-    height: 200px; width: auto;
-    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
-    margin-left: 25px;
+	height: 200px;
+	width: auto;
+	box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+	margin-left: 25px;
+	margin-bottom: 25px;
 }
-.select-movie{
-	font-size:25px;
+
+.select-movie {
+	font-size: 25px;
 	color: #F0E68C;
 	background-color: #800000;
 	margin-left: 50px;
@@ -110,4 +109,3 @@ h2{
 	text-align: center;
 	color: white
 }
-

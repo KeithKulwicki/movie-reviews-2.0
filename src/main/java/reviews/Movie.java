@@ -54,7 +54,7 @@ public class Movie {
 	public String getVideoClip() {
 		return videoClip;
 	}
-	
+
 	private Movie() {
 
 	}

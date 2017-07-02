@@ -8,15 +8,15 @@
 
 	<a class="backto" th:href="@{/genres(title=${movies})}">Back to
 		Keith's Movie Lounge List of Genres</a>
-	<a class="backto" th:href="@{/movies(title=${movies})}">Back
-		to Keith's Movie Lounge List of Titles</a>
-<!-- 	<a class="backto" th:href="@{/genre(id=${currentGenre.id})}">Back
+	<a class="backto" th:href="@{/movies(title=${movies})}">Back to
+		Keith's Movie Lounge List of Titles</a>
+	<!-- 	<a class="backto" th:href="@{/genre(id=${currentGenre.id})}">Back
 			to Keith's Movie Lounge Genre</a> -->
 
 	<h1 th:text="${movie.title}" />
 	<h2 th:text="${movie.description}"></h2>
-	<img class ="movie-poster" th:src="${movie.imageUrl}" />
-	<iframe class= "movie-clip" th:src="${movie.videoClip}"></iframe>
+	<img class="movie-poster" th:src="${movie.imageUrl}" />
+	<iframe class="movie-clip" th:src="${movie.videoClip}"></iframe>
 	<p class="movie-stats" th:text="'Genre: ' + ${movie.genre}"></p>
 	<p class="synopsis" th:text="'Review: ' + ${movie.review}"></p>
 

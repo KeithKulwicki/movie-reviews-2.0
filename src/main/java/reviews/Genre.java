@@ -29,7 +29,7 @@ public class Genre {
 	public String getDescription() {
 		return description;
 	}
-	
+
 	public String getGenreImage() {
 		return genreImage;
 	}
