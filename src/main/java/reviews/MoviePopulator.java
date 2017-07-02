@@ -77,7 +77,7 @@ public class MoviePopulator implements CommandLineRunner {
 		Movie godfather = new Movie(crime, "The Godfather (1972)",
 				"An offer you can't refuse.",
 				"The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pharetra metus sit amet lobortis ullamcorper. Suspendisse id mauris maximus, eleifend massa eget, tempor urna. Nam eget mollis dui, vel malesuada felis. Maecenas metus arcu, viverra et tincidunt ac, ullamcorper id sem. Sed turpis turpis, lobortis sed arcu egestas, fringilla ultrices lectus. Donec vel consequat nulla. Pellentesque ornare leo tortor, vel sodales urna pretium ac. Aliquam lacinia augue tellus, sit amet pulvinar risus hendrerit mattis.",
-				"/images/godfather.jpg", "https://www.youtube.com/embed/v=kTlhEX0kmL8");
+				"/images/godfather.jpg", "https://www.youtube.com/embed/nSWF-Df5wMo");
 		
 		
 		
