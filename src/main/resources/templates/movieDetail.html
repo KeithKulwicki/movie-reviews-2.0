@@ -7,7 +7,9 @@
 <body>
 
 	<a class="backtomain" th:href="@{/genres(title=${movies})}">Back to
-		Home</a>
+		Keith's Movie Lounge List of Genres</a>
+	<a class="backtomain" th:href="@{/movies(title=${movies})}">Back
+		to Keith's Movie Lounge List of Movies</a>
 
 	<h1 th:text="${movie.title}" />
 	<h2 th:text="${movie.description}"></h2>

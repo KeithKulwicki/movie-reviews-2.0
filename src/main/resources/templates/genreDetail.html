@@ -7,9 +7,11 @@
 <body>
 	<header>
 		<a class="backtomain" th:href="@{/genres(title=${movies})}">Back
-			to Home</a>
+			to Keith's Movie Lounge List of Genres</a>
+			<a class="backtomain" th:href="@{/movies(title=${movies})}">Back
+			to Keith's Movie Lounge List of Movies</a>
 
-		<h1 th:text="${genre.name}" />
+		<h1>Keith's Movie Lounge List of <a th:text="${genre.name}" /> Movies</h1>
 		<h2>Select movie:</h2>
 	</header>
 

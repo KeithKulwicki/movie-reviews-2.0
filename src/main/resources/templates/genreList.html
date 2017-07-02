@@ -6,14 +6,16 @@
 </head>
 <body>
 	<header>
-		<h1>Keith's Movie Lounge Reviews</h1>
+		<a class="backtomain" th:href="@{/movies(title=${movies})}">Back
+		to Keith's Movie Lounge List of Movies</a>
+		<h1>Keith's Movie Lounge List of Genres</h1>
 		<h2 class ="select-genre">Select genre:</h2>
 	</header>
 	<main class="content">
 	<article>
 		<a class = "currentGenre" th:each="currentGenre: ${genres}"
 			th:href="@{/genre(id=${currentGenre.id})}">
-				<img class ="genreImage" th:src="${currentGenre.genreImage}"></img>
+			<img class ="genreImage" th:src="${currentGenre.genreImage}"></img>
 				</a>
 	</article>
 	</main>
