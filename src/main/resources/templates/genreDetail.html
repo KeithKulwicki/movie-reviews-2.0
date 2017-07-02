@@ -9,7 +9,8 @@
 		<a class="backtomain" th:href="@{/genres(title=${movies})}">Back
 			to Home</a>
 
-		<h1 th:text="'Movies for Genre ' + ${genre.name}" />
+		<h1 th:text="${genre.name}" />
+		<h2>Select movie:</h2>
 	</header>
 
 	<article>

@@ -21,10 +21,12 @@ public class MoviePopulator implements CommandLineRunner {
 		Genre comedy = new Genre("Comedy", "Make 'em laugh films designed to elicit laughter from the audience..", "/images/icon_comedy.jpg");
 		Genre action = new Genre("Action", "Involving danger and unknown risks.", "/images/icon_action.jpg");
 		Genre family = new Genre("Family", "Fun for the whole family.", "/images/icon_family.jpg");
-
-		genreRepo.save(drama);
-		genreRepo.save(comedy);
+		Genre crime = new Genre("Crime", "Sinister actions of underworld figures operating outside the law.", "/images/icon_crime.jpg");
+		
 		genreRepo.save(action);
+		genreRepo.save(comedy);
+		genreRepo.save(crime);
+		genreRepo.save(drama);
 		genreRepo.save(family);
 
 		Movie savingPrivateRyan = new Movie(drama, "Saving Private Ryan (1998)",
@@ -67,6 +69,20 @@ public class MoviePopulator implements CommandLineRunner {
 				"Mel Brooks brings his one-of-a-kind comic touch to the history of mankind covering events from the Old Testament to the French Revolution in a series of episodic comedy vignettes. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pharetra metus sit amet lobortis ullamcorper. Suspendisse id mauris maximus, eleifend massa eget, tempor urna. Nam eget mollis dui, vel malesuada felis. Maecenas metus arcu, viverra et tincidunt ac, ullamcorper id sem. Sed turpis turpis, lobortis sed arcu egestas, fringilla ultrices lectus. Donec vel consequat nulla. Pellentesque ornare leo tortor, vel sodales urna pretium ac. Aliquam lacinia augue tellus, sit amet pulvinar risus hendrerit mattis.",
 				"/images/historyOfTheWorld.jpg", "https://www.youtube.com/embed/AILiI6f83L8");
 
+		Movie goodfellas = new Movie(crime, "Goodfellas (1990)",
+				"In a world that's powered by violence, on the streets where the violent have power, a new generation carries on an old tradition.",
+				"The story of Henry Hill and his life through the teen years into the years of mafia, covering his relationship with wife Karen Hill and his Mob partners Jimmy Conway and Tommy DeVitto in the Italian-American crime syndicate. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pharetra metus sit amet lobortis ullamcorper. Suspendisse id mauris maximus, eleifend massa eget, tempor urna. Nam eget mollis dui, vel malesuada felis. Maecenas metus arcu, viverra et tincidunt ac, ullamcorper id sem. Sed turpis turpis, lobortis sed arcu egestas, fringilla ultrices lectus. Donec vel consequat nulla. Pellentesque ornare leo tortor, vel sodales urna pretium ac. Aliquam lacinia augue tellus, sit amet pulvinar risus hendrerit mattis.",
+				"/images/goodfellas.jpg", "https://www.youtube.com/embed/h3QpxNI-PtE");
+
+		Movie godfather = new Movie(crime, "The Godfather (1972)",
+				"An offer you can't refuse.",
+				"The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pharetra metus sit amet lobortis ullamcorper. Suspendisse id mauris maximus, eleifend massa eget, tempor urna. Nam eget mollis dui, vel malesuada felis. Maecenas metus arcu, viverra et tincidunt ac, ullamcorper id sem. Sed turpis turpis, lobortis sed arcu egestas, fringilla ultrices lectus. Donec vel consequat nulla. Pellentesque ornare leo tortor, vel sodales urna pretium ac. Aliquam lacinia augue tellus, sit amet pulvinar risus hendrerit mattis.",
+				"/images/godfather.jpg", "https://www.youtube.com/embed/v=kTlhEX0kmL8");
+		
+		
+		
+		
+
 		movieRepo.save(savingPrivateRyan);
 		movieRepo.save(reservoirDogs);
 		movieRepo.save(theLegoMovie);
@@ -75,7 +91,9 @@ public class MoviePopulator implements CommandLineRunner {
 		movieRepo.save(batmanTheMovie66);
 		movieRepo.save(thisIsSpinalTap);
 		movieRepo.save(historyOfTheWorld);
-
+		movieRepo.save(goodfellas);
+		movieRepo.save(godfather);
+		
 	}
 
 }
