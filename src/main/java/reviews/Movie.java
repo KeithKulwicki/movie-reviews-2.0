@@ -16,14 +16,13 @@ public class Movie {
 	@ManyToOne
 	private Genre genre;
 
-	private String title; // Do I need this???
+	private String title;
 
 	@Lob
 	private String description;
 
 	@Lob
 	private String review;
-
 	private String imageUrl;
 	private String videoClip;
 

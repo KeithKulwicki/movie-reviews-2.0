@@ -14,8 +14,9 @@
 	<main class="content">
 	<article>
 		<a class="currentGenre" th:each="currentGenre: ${genres}"
-			th:href="@{/genre(id=${currentGenre.id})}"> <img
-			class="genreImage" th:src="${currentGenre.genreImage}"></img>
+			th:href="@{/genre(id=${currentGenre.id})}"> 
+			<img class="genreImage" th:src="${currentGenre.genreImage}"></img>
+<!-- 			<a th:text="${currentGenre.description}" />	 -->
 		</a>
 	</article>
 	</main>

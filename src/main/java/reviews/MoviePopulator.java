@@ -17,20 +17,24 @@ public class MoviePopulator implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 
-		Genre drama = new Genre("Drama", "Serious tone or subject.", "/images/icon_drama.jpg");
-		Genre comedy = new Genre("Comedy", "Make 'em laugh films designed to elicit laughter from the audience..",
+		Genre drama = new Genre("Drama", "Realistic characters in conflict with either themselves, others, or forces of nature. .", "/images/icon_drama.jpg");
+		Genre comedy = new Genre("Comedy", "Make 'em laugh films designed to elicit laughter from the audience.",
 				"/images/icon_comedy.jpg");
-		Genre action = new Genre("Action", "Involving danger and unknown risks.", "/images/icon_action.jpg");
-		Genre family = new Genre("Family", "Fun for the whole family.", "/images/icon_family.jpg");
+		Genre action = new Genre("Action", "Resourceful hero(ine) struggles against incredible odds, life-threatening situations, or an evil villain.", "/images/icon_action.jpg");
+		Genre family = new Genre("Family", "Wholesome, entertaining fun for the whole family.", "/images/icon_family.jpg");
 		Genre crime = new Genre("Crime", "Sinister actions of underworld figures operating outside the law.",
 				"/images/icon_crime.jpg");
-
+		Genre animated = new Genre("Animated", "When combined with movement, the illustrator's two-dimensional static art comes alive.",
+				"/images/icon_animated.jpg");
+		
 		genreRepo.save(action);
+		genreRepo.save(animated);		
 		genreRepo.save(comedy);
 		genreRepo.save(crime);
 		genreRepo.save(drama);
 		genreRepo.save(family);
 
+		
 		Movie savingPrivateRyan = new Movie(drama, "Saving Private Ryan (1998)",
 				"In the Last Great Invasion of the Last Great War, The Greatest Danger for Eight Men was Saving... One.",
 				"Following the Normandy Landings, a group of U.S. soldiers go behind enemy lines to retrieve a paratrooper whose brothers have been killed in action. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pharetra metus sit amet lobortis ullamcorper. Suspendisse id mauris maximus, eleifend massa eget, tempor urna. Nam eget mollis dui, vel malesuada felis. Maecenas metus arcu, viverra et tincidunt ac, ullamcorper id sem. Sed turpis turpis, lobortis sed arcu egestas, fringilla ultrices lectus. Donec vel consequat nulla. Pellentesque ornare leo tortor, vel sodales urna pretium ac. Aliquam lacinia augue tellus, sit amet pulvinar risus hendrerit mattis.",
@@ -80,11 +84,23 @@ public class MoviePopulator implements CommandLineRunner {
 				"An offer you can't refuse.",
 				"The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pharetra metus sit amet lobortis ullamcorper. Suspendisse id mauris maximus, eleifend massa eget, tempor urna. Nam eget mollis dui, vel malesuada felis. Maecenas metus arcu, viverra et tincidunt ac, ullamcorper id sem. Sed turpis turpis, lobortis sed arcu egestas, fringilla ultrices lectus. Donec vel consequat nulla. Pellentesque ornare leo tortor, vel sodales urna pretium ac. Aliquam lacinia augue tellus, sit amet pulvinar risus hendrerit mattis.",
 				"/images/godfather.jpg", "https://www.youtube.com/embed/nSWF-Df5wMo");
-		
-		
-		
-		
 
+		Movie heavymetal = new Movie(animated, "Heavy Metal (1981)",
+				"A step beyond science-fiction. Louder and nastier than ever.",
+				"A glowing green orb - which embodies ultimate evil - terrorizes a young girl with an anthology of bizarre and fantastic stories of dark fantasy, eroticism and horror. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pharetra metus sit amet lobortis ullamcorper. Suspendisse id mauris maximus, eleifend massa eget, tempor urna. Nam eget mollis dui, vel malesuada felis. Maecenas metus arcu, viverra et tincidunt ac, ullamcorper id sem. Sed turpis turpis, lobortis sed arcu egestas, fringilla ultrices lectus. Donec vel consequat nulla. Pellentesque ornare leo tortor, vel sodales urna pretium ac. Aliquam lacinia augue tellus, sit amet pulvinar risus hendrerit mattis.",
+				"/images/heavymetal.jpg", "https://www.youtube.com/embed/aCWg50TKqb4");
+		
+		Movie americanpop = new Movie(animated, "American Pop (1981)",
+				"One family, four generations, in love with the sound of American Pop.",
+				"The story of four generations of a Russian Jewish immigrant family of musicians whose careers parallel the history of American popular music in the 20th century. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pharetra metus sit amet lobortis ullamcorper. Suspendisse id mauris maximus, eleifend massa eget, tempor urna. Nam eget mollis dui, vel malesuada felis. Maecenas metus arcu, viverra et tincidunt ac, ullamcorper id sem. Sed turpis turpis, lobortis sed arcu egestas, fringilla ultrices lectus. Donec vel consequat nulla. Pellentesque ornare leo tortor, vel sodales urna pretium ac. Aliquam lacinia augue tellus, sit amet pulvinar risus hendrerit mattis.",
+				"/images/americanpop.jpg", "https://www.youtube.com/embed/VBwz9Pijr1E");
+		
+		
+		
+		
+		
+		
+		
 		movieRepo.save(savingPrivateRyan);
 		movieRepo.save(reservoirDogs);
 		movieRepo.save(theLegoMovie);
@@ -95,6 +111,8 @@ public class MoviePopulator implements CommandLineRunner {
 		movieRepo.save(historyOfTheWorld);
 		movieRepo.save(goodfellas);
 		movieRepo.save(godfather);
+		movieRepo.save(heavymetal);
+		movieRepo.save(americanpop);
 		
 	}
 
