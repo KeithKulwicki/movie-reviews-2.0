@@ -15,7 +15,7 @@
 
 	<h1 th:text="${movie.title}" />
 	<h2 th:text="${movie.description}"></h2>
-	<img class="movie-poster" th:src="${movie.imageUrl}" />
+	<img class="movie-detail-poster" th:src="${movie.imageUrl}" />
 	<iframe class="movie-clip" th:src="${movie.videoClip}"></iframe>
 	<p class="movie-stats" th:text="'Genre: ' + ${movie.genre}"></p>
 	<p class="synopsis" th:text="'Review: ' + ${movie.review}"></p>

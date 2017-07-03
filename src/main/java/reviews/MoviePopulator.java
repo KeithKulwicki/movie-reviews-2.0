@@ -24,11 +24,11 @@ public class MoviePopulator implements CommandLineRunner {
 		Genre family = new Genre("Family", "Wholesome, entertaining fun for the whole family.", "/images/icon_family.jpg");
 		Genre crime = new Genre("Crime", "Sinister actions of underworld figures operating outside the law.",
 				"/images/icon_crime.jpg");
-		Genre animated = new Genre("Animated", "When combined with movement, the illustrator's two-dimensional static art comes alive.",
-				"/images/icon_animated.jpg");
+		Genre animation = new Genre("Animation", "When combined with movement and storytelling, the illustrator's two-dimensional static art comes alive.",
+				"/images/icon_animation.jpg");
 		
 		genreRepo.save(action);
-		genreRepo.save(animated);		
+		genreRepo.save(animation);		
 		genreRepo.save(comedy);
 		genreRepo.save(crime);
 		genreRepo.save(drama);
@@ -45,12 +45,12 @@ public class MoviePopulator implements CommandLineRunner {
 				"After a simple jewelry heist goes terribly wrong, the surviving criminals begin to suspect that one of them is a police informant. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pharetra metus sit amet lobortis ullamcorper. Suspendisse id mauris maximus, eleifend massa eget, tempor urna. Nam eget mollis dui, vel malesuada felis. Maecenas metus arcu, viverra et tincidunt ac, ullamcorper id sem. Sed turpis turpis, lobortis sed arcu egestas, fringilla ultrices lectus. Donec vel consequat nulla. Pellentesque ornare leo tortor, vel sodales urna pretium ac. Aliquam lacinia augue tellus, sit amet pulvinar risus hendrerit mattis.",
 				"/images/resdogs.jpg","https://www.youtube.com/embed/vayksn4Y93A");
 
-		Movie theLegoMovie = new Movie(family, "The LEGO Movie (2014)",
+		Movie legoMovie = new Movie(family, "The LEGO Movie (2014)",
 				"Everything is awesome! The story of a nobody who saved everybody",
 				"An ordinary Lego construction worker, thought to be the prophesied 'Special', is recruited to join a quest to stop an evil tyrant from gluing the Lego universe into eternal stasis.. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pharetra metus sit amet lobortis ullamcorper. Suspendisse id mauris maximus, eleifend massa eget, tempor urna. Nam eget mollis dui, vel malesuada felis. Maecenas metus arcu, viverra et tincidunt ac, ullamcorper id sem. Sed turpis turpis, lobortis sed arcu egestas, fringilla ultrices lectus. Donec vel consequat nulla. Pellentesque ornare leo tortor, vel sodales urna pretium ac. Aliquam lacinia augue tellus, sit amet pulvinar risus hendrerit mattis.",
 				"/images/TheLegoMovie.jpg", "https://www.youtube.com/embed/fZ_JOBCLF-I");
 
-		Movie theLegoBatmanMovie = new Movie(family, "The LEGO Batman Movie (2017)",
+		Movie legoBatman = new Movie(family, "The LEGO Batman Movie (2017)",
 				"Always be yourself... unless you can be Batman",
 				"A cooler-than-ever Bruce Wayne must deal with the usual suspects as they plan to rule Gotham City, while discovering that he has accidentally adopted a teenage orphan who wishes to become his sidekick. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pharetra metus sit amet lobortis ullamcorper. Suspendisse id mauris maximus, eleifend massa eget, tempor urna. Nam eget mollis dui, vel malesuada felis. Maecenas metus arcu, viverra et tincidunt ac, ullamcorper id sem. Sed turpis turpis, lobortis sed arcu egestas, fringilla ultrices lectus. Donec vel consequat nulla. Pellentesque ornare leo tortor, vel sodales urna pretium ac. Aliquam lacinia augue tellus, sit amet pulvinar risus hendrerit mattis.",
 				"/images/legoBatman.jpg", "https://www.youtube.com/embed/n9c83L8hevQ");
@@ -85,34 +85,30 @@ public class MoviePopulator implements CommandLineRunner {
 				"The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pharetra metus sit amet lobortis ullamcorper. Suspendisse id mauris maximus, eleifend massa eget, tempor urna. Nam eget mollis dui, vel malesuada felis. Maecenas metus arcu, viverra et tincidunt ac, ullamcorper id sem. Sed turpis turpis, lobortis sed arcu egestas, fringilla ultrices lectus. Donec vel consequat nulla. Pellentesque ornare leo tortor, vel sodales urna pretium ac. Aliquam lacinia augue tellus, sit amet pulvinar risus hendrerit mattis.",
 				"/images/godfather.jpg", "https://www.youtube.com/embed/nSWF-Df5wMo");
 
-		Movie heavymetal = new Movie(animated, "Heavy Metal (1981)",
+		Movie heavymetal = new Movie(animation, "Heavy Metal (1981)",
 				"A step beyond science-fiction. Louder and nastier than ever.",
 				"A glowing green orb - which embodies ultimate evil - terrorizes a young girl with an anthology of bizarre and fantastic stories of dark fantasy, eroticism and horror. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pharetra metus sit amet lobortis ullamcorper. Suspendisse id mauris maximus, eleifend massa eget, tempor urna. Nam eget mollis dui, vel malesuada felis. Maecenas metus arcu, viverra et tincidunt ac, ullamcorper id sem. Sed turpis turpis, lobortis sed arcu egestas, fringilla ultrices lectus. Donec vel consequat nulla. Pellentesque ornare leo tortor, vel sodales urna pretium ac. Aliquam lacinia augue tellus, sit amet pulvinar risus hendrerit mattis.",
 				"/images/heavymetal.jpg", "https://www.youtube.com/embed/aCWg50TKqb4");
 		
-		Movie americanpop = new Movie(animated, "American Pop (1981)",
+		Movie americanpop = new Movie(animation, "American Pop (1981)",
 				"One family, four generations, in love with the sound of American Pop.",
 				"The story of four generations of a Russian Jewish immigrant family of musicians whose careers parallel the history of American popular music in the 20th century. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pharetra metus sit amet lobortis ullamcorper. Suspendisse id mauris maximus, eleifend massa eget, tempor urna. Nam eget mollis dui, vel malesuada felis. Maecenas metus arcu, viverra et tincidunt ac, ullamcorper id sem. Sed turpis turpis, lobortis sed arcu egestas, fringilla ultrices lectus. Donec vel consequat nulla. Pellentesque ornare leo tortor, vel sodales urna pretium ac. Aliquam lacinia augue tellus, sit amet pulvinar risus hendrerit mattis.",
 				"/images/americanpop.jpg", "https://www.youtube.com/embed/VBwz9Pijr1E");
 		
 		
 		
-		
-		
-		
-		
-		movieRepo.save(savingPrivateRyan);
-		movieRepo.save(reservoirDogs);
-		movieRepo.save(theLegoMovie);
-		movieRepo.save(theLegoBatmanMovie);
-		movieRepo.save(batman89);
-		movieRepo.save(batmanTheMovie66);
-		movieRepo.save(thisIsSpinalTap);
-		movieRepo.save(historyOfTheWorld);
-		movieRepo.save(goodfellas);
-		movieRepo.save(godfather);
-		movieRepo.save(heavymetal);
 		movieRepo.save(americanpop);
+		movieRepo.save(batmanTheMovie66);
+		movieRepo.save(batman89);
+		movieRepo.save(godfather);
+		movieRepo.save(goodfellas);
+		movieRepo.save(heavymetal);
+		movieRepo.save(historyOfTheWorld);
+		movieRepo.save(legoBatman);
+		movieRepo.save(legoMovie);
+		movieRepo.save(reservoirDogs);		
+		movieRepo.save(savingPrivateRyan);
+		movieRepo.save(thisIsSpinalTap);
 		
 	}
 
