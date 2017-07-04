@@ -5,18 +5,19 @@
 <link rel="stylesheet" type="text/css" href="/css/style.css"></link>
 </head>
 <body>
-	<header>
-		<a class="backto" th:href="@{/movies(title=${movies})}">Back to
-			Keith's Movie Lounge List of Titles</a>
-		<h1>Keith's Movie Lounge List of Genres</h1>
-		<h2 class="select-genre">Select genre:</h2>
-	</header>
+	<nav class="navbar">
+		<ul>
+			<li><a class="active">List of Genres</a></li>
+			<li><a th:href="@{/movies(title=${movies})}">List of Titles</a></li>
+		</ul>
+	</nav>
+	<h1>Keith's Movie Lounge List of Genres</h1>
+	<h2 class="select-genre">Select genre:</h2>
 	<main class="content">
 	<article>
 		<a class="currentGenre" th:each="currentGenre: ${genres}"
-			th:href="@{/genre(id=${currentGenre.id})}"> 
-			<img class="genreImage" th:src="${currentGenre.genreImage}"></img>
-<!-- 			<a th:text="${currentGenre.description}" />	 -->
+			th:href="@{/genre(id=${currentGenre.id})}"> <img
+			class="genreImage" th:src="${currentGenre.genreImage}"></img> <!--<a th:text="${currentGenre.description}" />	 -->
 		</a>
 	</article>
 	</main>
