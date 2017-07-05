@@ -34,7 +34,7 @@ h2 {
 	width: 100%;
 }
 /* ---NAVBAR GLOBAL--- */
-.navbar ul {
+.clearfix {
 	list-style-type: none;
 	margin: 0;
 	font-family: arial, sans-serif;
@@ -56,7 +56,7 @@ h2 {
 	border-right: none;
 }
 
-.navbar li a {
+.inactive {
 	list-style-type: none;
 	text-decoration: none;
 	display: block;
@@ -66,15 +66,20 @@ h2 {
 	width: 150px;
 }
 
-.navbar li a:hover {
+.inactive:hover {
 	color: #800000;
 	background-color: #F0E68C;
 	font-weight: bold;
 }
 
-.navbar .active {
+.active {
 	background-color: #F0E68C;
-	color: #800000;]
+	color: #800000;
+	display: block;
+	padding: 8px;
+}
+.active:hover {
+	font-weight: normal;
 }
 
 /* -- reviews specific Styling -- */
