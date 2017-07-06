@@ -10,20 +10,19 @@
 			<ul class="clearfix">
 				<li><a class="active">List of Genres</a></li>
 				<li><a class="inactive" href="/movies">List of Titles</a></li>
-				<li><a class="inactive" href="javascript:history.back()">Previous Page</a></li>
+				<li><a class="inactive" href="javascript:history.back()">Previous
+						Page</a></li>
 			</ul>
 		</nav>
 	</div>
 	<h1>Keith's Movie Lounge List of Genres</h1>
 	<h2 class="select-genre">Select genre:</h2>
-	<main class="content">
-	<article>
+	<article class="content">
 		<a class="currentGenre" th:each="currentGenre: ${genres}"
 			th:href="@{/genre(id=${currentGenre.id})}"> <img
 			class="genreImage" th:src="${currentGenre.genreImage}"></img> <!--<a th:text="${currentGenre.description}" />	 -->
 		</a>
 	</article>
-	</main>
 </body>
 <footer>
 	<p class="signature">Posted by Keith Kulwicki 2017</p>

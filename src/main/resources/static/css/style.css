@@ -11,10 +11,10 @@ body {
 h1 {
 	background-color: #F0E68C;
 	color: #800000;
-	font-weight: bold;
+	font-weight: 900;
 	font-family: arial, sans-serif;
 	font-size: 45px;
-	margin-top: 35px;
+	margin-top: 25px;
 	display: block;
 	padding: 8px;
 	width: 100%;	
@@ -27,7 +27,8 @@ h2 {
 	font-size: 20px;
 	font-style: italic;
 	font-family: "Arial Narrow", Arial, sans-serif;
-	margin-top: 35px;
+	font-weight: 400;
+	margin-top: 5px;
 	margin-left: 50px;
 	display: block;
 	padding: 8px;
@@ -67,9 +68,10 @@ h2 {
 }
 
 .inactive:hover {
-	color: #800000;
-	background-color: #F0E68C;
+	color: #e8d84a;
+	background-color: #b30000;
 	font-weight: bold;
+	text-shadow: 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 .active {
@@ -97,6 +99,7 @@ h2 {
 }
 
 .movie-stats {
+	font-family: Arial, sans-serif;
 	font-size: 20px;
 	color: #F0E68C;
 	background-color: #8B0000;
@@ -142,9 +145,10 @@ h2 {
 }
 
 .synopsis {
+	margin-left: 50px;
 	font-family: "Arial Narrow", Arial, sans-serif;
 	font-style: italic;
-	font-size: 25px;
+	font-size: 20px;
 	color: #F0E68C;
 	background-color: #800000;
 }

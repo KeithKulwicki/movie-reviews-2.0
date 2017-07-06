@@ -10,17 +10,19 @@
 			<ul class="clearfix">
 				<li><a class="inactive" href="/genres">List of Genres</a></li>
 				<li><a class="inactive" href="/movies">List of Titles</a></li>
-				<li><a class="inactive" href="javascript:history.back()">Previous Page</a></li>
+				<li><a class="inactive" href="javascript:history.back()">Previous
+						Page</a></li>
 			</ul>
 		</nav>
 	</div>
 	<h1 th:text="${movie.title}" />
 	<h2 th:text="${movie.description}"></h2>
-	<img class="movie-detail-poster" th:src="${movie.imageUrl}" />
-	<iframe class="movie-clip" th:src="${movie.videoClip}"></iframe>
-	<p class="movie-stats" th:text="'Genre: ' + ${movie.genre}"></p>
-	<p class="synopsis" th:text="'Review: ' + ${movie.review}"></p>
-
+	<article class="content">
+		<img class="movie-detail-poster" th:src="${movie.imageUrl}" />
+		<iframe class="movie-clip" th:src="${movie.videoClip}"></iframe>
+		<p class="movie-stats" th:text="'Genre: ' + ${movie.genre}"></p>
+		<p class="synopsis" th:text="'Review: ' + ${movie.review}"></p>
+	</article>
 </body>
 <footer>
 	<p class="signature">Posted by Keith Kulwicki 2017</p>

@@ -10,19 +10,18 @@
 			<ul class="clearfix">
 				<li><a class="inactive" href="/genres">List of Genres</a></li>
 				<li><a class="active">List of Titles</a></li>
-				<li><a class="inactive" href="javascript:history.back()">Previous Page</a></li>
+				<li><a class="inactive" href="javascript:history.back()">Previous
+						Page</a></li>
 			</ul>
 		</nav>
 	</div>
 	<h1>Keith's Movie Lounge List of Titles</h1>
 	<h2>Select movie:</h2>
-	<article>
+	<article class="content">
 		<a class="movie-thumb" th:each="currentMovie: ${movies}"
 			th:href="@{/movie(id=${currentMovie.id})}"><img
 			class="title-image" th:src="${currentMovie.imageUrl}"></img></a>
 	</article>
-
-
 </body>
 <footer class="footer">
 	<p class="signature">Posted by Keith Kulwicki 2017</p>
