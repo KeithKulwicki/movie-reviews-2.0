@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Keith's Movie Lounge Reviews</title>
+<title>Genre List</title>
 <link rel="stylesheet" type="text/css" href="/css/style.css"></link>
 </head>
 <body>
 	<div class="nav-wrapper">
 		<nav class="navbar">
 			<ul class="clearfix">
-				<li><a class="active">List of Genres</a></li>
-				<li><a class="inactive" href="/movies">List of Titles</a></li>
+				<li><a class="inactive" href="/home">Home</a></li>
+				<li><a class="active">Genres</a></li>
+				<li><a class="inactive" href="/movies">Titles</a></li>
+				<li><a class="inactive" href="/tags">Tags</a></li>
 				<li><a class="inactive" href="javascript:history.back()">Previous
 						Page</a></li>
 			</ul>
@@ -20,7 +22,7 @@
 	<article class="content">
 		<a class="currentGenre" th:each="currentGenre: ${genres}"
 			th:href="@{/genre(id=${currentGenre.id})}"> <img
-			class="genreImage" th:src="${currentGenre.genreImage}"></img> <!--<a th:text="${currentGenre.description}" />	 -->
+			class="genreImage" th:src="${currentGenre.genreImage}"></img>
 		</a>
 	</article>
 </body>

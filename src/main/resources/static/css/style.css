@@ -5,7 +5,6 @@ body {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-
 }
 /*--- GLOBAL ---*/
 h1 {
@@ -17,7 +16,7 @@ h1 {
 	margin-top: 25px;
 	display: block;
 	padding: 8px;
-	width: 100%;	
+	width: 100%;
 }
 
 h2 {
@@ -75,13 +74,30 @@ h2 {
 }
 
 .active {
-	background-color: #F0E68C;
-	color: #800000;
+	list-style-type: none;
+	text-decoration: none;
 	display: block;
 	padding: 8px;
+	background-color: #F0E68C;
+	color: #800000;
+	width: 150px;
 }
+
 .active:hover {
 	font-weight: normal;
+}
+
+/* HOME */
+.home-image {
+	border: solid 3px #F0E68C;
+	height: 250px;
+	width: auto;
+	box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+	margin-left: 50px;
+}
+
+.home-image:hover {
+	border: solid 3px #8B0000;
 }
 
 /* -- reviews specific Styling -- */
@@ -104,6 +120,11 @@ h2 {
 	color: #F0E68C;
 	background-color: #8B0000;
 	margin-left: 50px;
+}
+
+.movie-tags {
+	text-decoration: none;
+	color: #F0E68C;
 }
 
 .movie-people {
@@ -137,15 +158,25 @@ h2 {
 }
 
 .movie-clip {
-	border: solid 3px #F0E68C;;
+	border: solid 3px #F0E68C;
 	height: 315px;
 	width: 500px;
 	box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
 	margin-left: 50px;
 }
 
-.synopsis {
+.tag-content {
 	margin-left: 50px;
+	font-family: "Arial Narrow", Arial, sans-serif;
+	font-style: italic;
+	font-size: 20px;
+	color: #F0E68C;
+	background-color: #800000;
+	border: solid 1px #F0E68C;
+}
+
+.synopsis {
+	margin-left: 5px;
 	font-family: "Arial Narrow", Arial, sans-serif;
 	font-style: italic;
 	font-size: 20px;

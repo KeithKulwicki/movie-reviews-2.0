@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Tags</title>
+<link rel="stylesheet" type="text/css" href="/css/style.css"></link>
+</head>
+<body>
+	<div class="nav-wrapper">
+		<nav class="navbar">
+			<ul class="clearfix">
+				<li><a class="inactive" href="/home">Home</a></li>
+				<li><a class="inactive" href="/genres">Genres</a></li>
+				<li><a class="inactive" href="/movies">Titles</a></li>
+				<li><a class="active">Tags</a></li>
+				<li><a class="inactive" href="javascript:history.back()">Previous
+						Page</a></li>
+			</ul>
+		</nav>
+	</div>
+	<h1>Keith's Movie Lounge List of Tags</h1>
+
+	<h2>Tags:</h2>
+	<article>
+		<ul class="tag-content">
+			<li th:each="tag: ${tags}"><span th:text="${tag.name}"></span></li>
+		</ul>
+	</article>
+</body>
+<footer class="footer">
+	<p class="signature">Posted by Keith Kulwicki 2017</p>
+</footer>
+</html>

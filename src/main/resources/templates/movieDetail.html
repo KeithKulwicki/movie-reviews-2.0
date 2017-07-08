@@ -1,28 +1,51 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-<title th:text="${movie.title}" />
+<title th:text="${movie.title}"></title>
 <link rel="stylesheet" type="text/css" href="/css/style.css"></link>
 </head>
 <body>
 	<div class="nav-wrapper">
 		<nav class="navbar">
 			<ul class="clearfix">
-				<li><a class="inactive" href="/genres">List of Genres</a></li>
-				<li><a class="inactive" href="/movies">List of Titles</a></li>
+				<li><a class="inactive" href="/home">Home</a></li>
+				<li><a class="inactive" href="/genres">Genres</a></li>
+				<li><a class="inactive" href="/movies">Titles</a></li>
+				<li><a class="inactive" href="/tags">Tags</a></li>
 				<li><a class="inactive" href="javascript:history.back()">Previous
 						Page</a></li>
 			</ul>
 		</nav>
 	</div>
-	<h1 th:text="${movie.title}" />
+	<h1 th:text="${movie.title}"></h1>
 	<h2 th:text="${movie.description}"></h2>
 	<article class="content">
 		<img class="movie-detail-poster" th:src="${movie.imageUrl}" />
 		<iframe class="movie-clip" th:src="${movie.videoClip}"></iframe>
-		<p class="movie-stats" th:text="'Genre: ' + ${movie.genre}"></p>
-		<p class="synopsis" th:text="'Review: ' + ${movie.review}"></p>
+		<h2 class="movie-stats" th:text="'Genre: ' + ${movie.genre}"></h2>
+		<h2>
+			Tags:
+			<form>
+				<input name="movieId" type="hidden" th:value="${movie.id}" />
+				<ul>
+					<li th:each="tag: ${movie.tags}"><a class="movie-tags"
+						th:href="@{/tag(id=${tag.id})}"> <span th:text="${tag.name}" />
+					</a>
+						<button name="tagId" th:value="${tag.id}"
+							th:formaction="@{/deleteTag}">Delete Tag</button></li>
+				</ul>
+			</form>
+
+			<form method="POST">
+				<input name="id" type="hidden" th:value="${movie.id}" /> <label>Add
+					Tag: <input type="text" name="name" />
+				</label>
+				<button th:formaction="@{/createTag}">Add Tag</button>
+			</form>
+		</h2>
 	</article>
+
+
 </body>
 <footer>
 	<p class="signature">Posted by Keith Kulwicki 2017</p>

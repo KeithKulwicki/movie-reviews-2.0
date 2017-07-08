@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Home</title>
+<link rel="stylesheet" type="text/css" href="/css/style.css"></link>
+</head>
+<body>
+	<div class="nav-wrapper">
+		<nav class="navbar">
+			<ul class="clearfix">
+				<li><a class="active">Home</a></li>
+				<li><a class="inactive" href="/genres">Genres</a></li>
+				<li><a class="inactive" href="/movies">Titles</a></li>
+				<li><a class="inactive" href="/tags">Tags</a></li>
+				<li><a class="inactive" href="javascript:history.back()">Previous
+						Page</a></li>
+			</ul>
+		</nav>
+	</div>
+	<h1>Welcome to Keith's Movie Lounge</h1>
+	<h2>Select:</h2>
+	<div>
+		<a href="/genres"><img class="home-image"
+			src="/images/filmgenres.jpg" /></a> <a href="/movies"><img
+			class="home-image" src="/images/filmlist.jpg" /></a> <a href="/tags"><img
+			class="home-image" src="/images/tag_icon.jpg" /></a>
+	</div>
+
+</body>
+</html>
