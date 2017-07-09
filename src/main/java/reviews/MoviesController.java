@@ -56,11 +56,11 @@ public class MoviesController {
 	@RequestMapping("/tags")
 	public String showTags(Model model) {
 		model.addAttribute("tags", tagRepo.findAll());
-		return "tags";
+		return "tagList";
 	}
 
 	@RequestMapping("/tag")
-	public String fetchTagDetail(@RequestParam("id") long id, Model model) {
+	public String fetchTagDetail(@RequestParam("id") Long id, Model model) {
 		Tag selectedTag = tagRepo.findOne(id);
 		model.addAttribute(selectedTag);
 		return "tagDetail";

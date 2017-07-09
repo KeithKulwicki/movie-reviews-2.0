@@ -17,14 +17,14 @@
 			</ul>
 		</nav>
 	</div>
-	<h1>Keith's Movie Lounge List of Tags</h1>
-	<h2 class="select-tag">Select tag:</h2>
-	<!-- 	<h2 th:text="${tag.name}"></h2>
+	<h1>List of <a th:text="${tag.name}"></a> Movies</h1>
+	<h2 class="select-tag">Select movie:</h2>
+
 	<article class="content">
-		<a th:each="current: ${tag.movies}"
-			th:href="@{/tag/(id=${current.id})}"> <img class="movie-poster"
+		<a th:each="current: ${tag.taggedBy}"
+			th:href="@{/movie/(id=${current.id})}"> <img class="movie-poster"
 			th:src="${current.imageUrl}" /></a>
-	</article> -->
+	</article>
 </body>
 <footer>
 	<p class="signature">Posted by Keith Kulwicki 2017</p>
