@@ -23,7 +23,7 @@
 		<img class="movie-detail-poster" th:src="${movie.imageUrl}" />
 		<iframe class="movie-clip" th:src="${movie.videoClip}"></iframe>
 		<h2 class="movie-stats" th:text="'Genre: ' + ${movie.genre}"></h2>
-		<h2>Tags:</h2>
+		<h2>Tags:
 		<div class="tagcloud01">
 			<form>
 				<input name="movieId" type="hidden" th:value="${movie.id}" />
@@ -43,6 +43,7 @@
 				<button class="add-button" th:formaction="@{/createTag}">Add</button>
 			</form>
 		</div>
+		</h2>
 		<h2 class="movie-stats" th:text="'Synopsis: ' + ${movie.review}"></h2>
 	</article>
 

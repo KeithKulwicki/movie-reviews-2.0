@@ -41,28 +41,20 @@ public class MoviesPopulator implements CommandLineRunner {
 		Genre animation = new Genre("Animation",
 				"When combined with movement and storytelling, the illustrator's two-dimensional static art comes alive.",
 				"/images/icon_animation.jpg");
-		Genre horror = new Genre("Horror",
-				"Unsettling films designed invoke our hidden worst fears",
+		Genre horror = new Genre("Horror", "Unsettling films designed invoke our hidden worst fears",
 				"/images/icon_horror.jpg");
-		Genre adventure = new Genre("Adventure",
-				"Action-filled, exciting, energetic experience.",
+		Genre adventure = new Genre("Adventure", "Action-filled, exciting, energetic experience.",
 				"/images/icon_adventure.jpg");
-		Genre war = new Genre("War",
-				"The heroics, heartbreak, and horror of war.",
-				"/images/icon_war1.jpg");
-		Genre western = new Genre("Western",
-				"A eulogy to the early days of the expansive American frontier.",
+		Genre war = new Genre("War", "The heroics, heartbreak, and horror of war.", "/images/icon_war1.jpg");
+		Genre western = new Genre("Western", "A eulogy to the early days of the expansive American frontier.",
 				"/images/icon_western.jpg");
-		Genre historical = new Genre("Historical",
-				"Expensive and lavish interpretation of past events.",
+		Genre historical = new Genre("Historical", "Expensive and lavish interpretation of past events.",
 				"/images/icon_historical.jpg");
-		Genre musical = new Genre("Musical",
-				"Emphasize and showcase music and dance as part of the narrative",
+		Genre musical = new Genre("Musical", "Emphasize and showcase music and dance as part of the narrative",
 				"/images/icon_music.jpg");
-		Genre scifi = new Genre("Sci-Fi",
-				"Explores the potential consequences of scientific and other innovations,",
+		Genre scifi = new Genre("Sci-Fi", "Explores the potential consequences of scientific and other innovations,",
 				"/images/icon_scifi.jpg");
-		
+
 		genreRepo.save(action);
 		genreRepo.save(adventure);
 		genreRepo.save(animation);
@@ -76,7 +68,7 @@ public class MoviesPopulator implements CommandLineRunner {
 		genreRepo.save(scifi);
 		genreRepo.save(war);
 		genreRepo.save(western);
-		
+
 		Tag adventure1 = new Tag("Adventure");
 		tagRepo.save(adventure1);
 		Tag action1 = new Tag("Action");
@@ -105,7 +97,7 @@ public class MoviesPopulator implements CommandLineRunner {
 		tagRepo.save(superheroes);
 		Tag scifi1 = new Tag("Sci-Fi");
 		tagRepo.save(scifi1);
-		Tag comedy1= new Tag("Comedy");
+		Tag comedy1 = new Tag("Comedy");
 		tagRepo.save(comedy1);
 		Tag drama1 = new Tag("Drama");
 		tagRepo.save(drama1);
@@ -174,47 +166,45 @@ public class MoviesPopulator implements CommandLineRunner {
 				"One family, four generations, in love with the sound of American Pop.",
 				"The story of four generations of a Russian Jewish immigrant family of musicians whose careers parallel the history of American popular music in the 20th century. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pharetra metus sit amet lobortis ullamcorper. Suspendisse id mauris maximus, eleifend massa eget, tempor urna. Nam eget mollis dui, vel malesuada felis. Maecenas metus arcu, viverra et tincidunt ac, ullamcorper id sem. Sed turpis turpis, lobortis sed arcu egestas, fringilla ultrices lectus. Donec vel consequat nulla. Pellentesque ornare leo tortor, vel sodales urna pretium ac. Aliquam lacinia augue tellus, sit amet pulvinar risus hendrerit mattis.",
 				"/images/americanpop.jpg", "https://www.youtube.com/embed/VBwz9Pijr1E", music, historical1);
-		
-		Movie frankenstein = new Movie(scifi, "Frankenstein  (1931)",
-				"The Man Who Made A Monster!",
+
+		Movie frankenstein = new Movie(scifi, "Frankenstein  (1931)", "The Man Who Made A Monster!",
 				"An obsessed scientist assembles a living being from parts of exhumed corpses. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pharetra metus sit amet lobortis ullamcorper. Suspendisse id mauris maximus, eleifend massa eget, tempor urna. Nam eget mollis dui, vel malesuada felis. Maecenas metus arcu, viverra et tincidunt ac, ullamcorper id sem. Sed turpis turpis, lobortis sed arcu egestas, fringilla ultrices lectus. Donec vel consequat nulla. Pellentesque ornare leo tortor, vel sodales urna pretium ac. Aliquam lacinia augue tellus, sit amet pulvinar risus hendrerit mattis.",
 				"/images/frankenstein.jpg", "https://www.youtube.com/embed/AkSbwiKP3mo", scifi1, drama1);
-		
+
 		Movie voyageDansLaLune = new Movie(scifi, "Voyage Dans La Lune (A Trip to the Moon) (1902)",
 				"A group of astronomers go on an expedition to the Moon.",
 				"A group of men travel to the moon by being shot in a capsule from a giant cannon. They are captured by moon-men, escape, and return to the earth. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pharetra metus sit amet lobortis ullamcorper. Suspendisse id mauris maximus, eleifend massa eget, tempor urna. Nam eget mollis dui, vel malesuada felis. Maecenas metus arcu, viverra et tincidunt ac, ullamcorper id sem. Sed turpis turpis, lobortis sed arcu egestas, fringilla ultrices lectus. Donec vel consequat nulla. Pellentesque ornare leo tortor, vel sodales urna pretium ac. Aliquam lacinia augue tellus, sit amet pulvinar risus hendrerit mattis.",
 				"/images/voyageDansLaLune.jpg", "https://www.youtube.com/embed/9m830jhUi3E", scifi1);
-		
-		Movie apocalypseNow = new Movie(war, "Apocalypse Now (1979)",
-				" The Horror. . . The Horror. . .",
+
+		Movie apocalypseNow = new Movie(war, "Apocalypse Now (1979)", " The Horror. . . The Horror. . .",
 				"During the Vietnam War, Captain Willard is sent on a dangerous mission into Cambodia to assassinate a renegade colonel who has set himself up as a god among a local tribe. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pharetra metus sit amet lobortis ullamcorper. Suspendisse id mauris maximus, eleifend massa eget, tempor urna. Nam eget mollis dui, vel malesuada felis. Maecenas metus arcu, viverra et tincidunt ac, ullamcorper id sem. Sed turpis turpis, lobortis sed arcu egestas, fringilla ultrices lectus. Donec vel consequat nulla. Pellentesque ornare leo tortor, vel sodales urna pretium ac. Aliquam lacinia augue tellus, sit amet pulvinar risus hendrerit mattis.",
 				"/images/apocalypseNow.jpg", "https://www.youtube.com/embed/FTjG-Aux_yQ", war1, drama1);
-		
+
 		Movie spartacus = new Movie(historical, "Spartacus (1960)",
 				"History's most powerful story of love and rebellion",
 				"The slave Spartacus leads a violent revolt against the decadent Roman Republic. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pharetra metus sit amet lobortis ullamcorper. Suspendisse id mauris maximus, eleifend massa eget, tempor urna. Nam eget mollis dui, vel malesuada felis. Maecenas metus arcu, viverra et tincidunt ac, ullamcorper id sem. Sed turpis turpis, lobortis sed arcu egestas, fringilla ultrices lectus. Donec vel consequat nulla. Pellentesque ornare leo tortor, vel sodales urna pretium ac. Aliquam lacinia augue tellus, sit amet pulvinar risus hendrerit mattis.",
 				"/images/sparticus.jpg", "https://www.youtube.com/embed/HcIMY1Ah3aw", war1, drama1);
-	
+
 		Movie raidersOfTheLostArk = new Movie(adventure, "Raiders of the Lost Ark (1981)",
 				"The Return of the Great Adventure.",
 				"Archaeologist and adventurer Indiana Jones is hired by the U.S. government to find the Ark of the Covenant before the Nazis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pharetra metus sit amet lobortis ullamcorper. Suspendisse id mauris maximus, eleifend massa eget, tempor urna. Nam eget mollis dui, vel malesuada felis. Maecenas metus arcu, viverra et tincidunt ac, ullamcorper id sem. Sed turpis turpis, lobortis sed arcu egestas, fringilla ultrices lectus. Donec vel consequat nulla. Pellentesque ornare leo tortor, vel sodales urna pretium ac. Aliquam lacinia augue tellus, sit amet pulvinar risus hendrerit mattis.",
 				"/images/raidersOfTheLostArk.jpg", "https://www.youtube.com/embed/XkkzKHCx154", action1, adventure1);
-	
+
 		Movie pitAndThePendulum = new Movie(horror, "The Pit and the Pendulum (1961)",
 				"Until now no one has dared to film this ...... the most diabolical classic of all time!",
 				"In the sixteenth century, Francis Barnard travels to Spain to clarify the strange circumstances of his sister's death after she had married the son of a cruel Spanish Inquisitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pharetra metus sit amet lobortis ullamcorper. Suspendisse id mauris maximus, eleifend massa eget, tempor urna. Nam eget mollis dui, vel malesuada felis. Maecenas metus arcu, viverra et tincidunt ac, ullamcorper id sem. Sed turpis turpis, lobortis sed arcu egestas, fringilla ultrices lectus. Donec vel consequat nulla. Pellentesque ornare leo tortor, vel sodales urna pretium ac. Aliquam lacinia augue tellus, sit amet pulvinar risus hendrerit mattis.",
-				"/images/pitAndThePendulum.jpg", "https://www.youtube.com/embed/QChBy15UiTs", drama1, horror1,fantasy);
-		
+				"/images/pitAndThePendulum.jpg", "https://www.youtube.com/embed/QChBy15UiTs", drama1, horror1, fantasy);
+
 		Movie aHardDaysNight = new Movie(musical, "A Hard Day's Night (1964)",
 				"THE BEATLES in Their First Full Length, Hilarious Action-Packed Film",
 				"A \"typical\" day in the life of The Beatles, including many of their famous songs. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pharetra metus sit amet lobortis ullamcorper. Suspendisse id mauris maximus, eleifend massa eget, tempor urna. Nam eget mollis dui, vel malesuada felis. Maecenas metus arcu, viverra et tincidunt ac, ullamcorper id sem. Sed turpis turpis, lobortis sed arcu egestas, fringilla ultrices lectus. Donec vel consequat nulla. Pellentesque ornare leo tortor, vel sodales urna pretium ac. Aliquam lacinia augue tellus, sit amet pulvinar risus hendrerit mattis.",
 				"/images/aHardDaysNight.jpg", "https://www.youtube.com/embed/4YKZg_dbcNQ", comedy1, music);
-		
+
 		Movie goodBadUgly = new Movie(western, "The Good, the Bad, and the Ugly (1966) ",
 				"For Three Men The Civil War Wasn't Hell. It Was Practice!",
 				"A bounty hunting scam joins two men in an uneasy alliance against a third in a race to find a fortune in gold buried in a remote cemetery. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pharetra metus sit amet lobortis ullamcorper. Suspendisse id mauris maximus, eleifend massa eget, tempor urna. Nam eget mollis dui, vel malesuada felis. Maecenas metus arcu, viverra et tincidunt ac, ullamcorper id sem. Sed turpis turpis, lobortis sed arcu egestas, fringilla ultrices lectus. Donec vel consequat nulla. Pellentesque ornare leo tortor, vel sodales urna pretium ac. Aliquam lacinia augue tellus, sit amet pulvinar risus hendrerit mattis.",
 				"/images/goodBadUgly.jpg", "https://www.youtube.com/embed/WCN5JJY_wiA", spaghettiwestern, outlaw);
-		
+
 		movieRepo.save(aHardDaysNight);
 		movieRepo.save(americanpop);
 		movieRepo.save(apocalypseNow);
@@ -228,13 +218,13 @@ public class MoviesPopulator implements CommandLineRunner {
 		movieRepo.save(historyOfTheWorld);
 		movieRepo.save(legoBatman);
 		movieRepo.save(legoMovie);
+		movieRepo.save(raidersOfTheLostArk);
 		movieRepo.save(reservoirDogs);
 		movieRepo.save(pitAndThePendulum);
 		movieRepo.save(savingPrivateRyan);
 		movieRepo.save(spartacus);
 		movieRepo.save(thisIsSpinalTap);
 		movieRepo.save(voyageDansLaLune);
-		movieRepo.save(raidersOfTheLostArk);
 	}
 
 }
