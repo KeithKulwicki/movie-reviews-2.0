@@ -23,26 +23,26 @@
 		<img class="movie-detail-poster" th:src="${movie.imageUrl}" />
 		<iframe class="movie-clip" th:src="${movie.videoClip}"></iframe>
 		<h2 class="movie-stats" th:text="'Genre: ' + ${movie.genre}"></h2>
-		<h2>
-			Tags:
+		<h2>Tags:</h2>
+		<div class="tagcloud01">
 			<form>
 				<input name="movieId" type="hidden" th:value="${movie.id}" />
 				<ul>
 					<li th:each="tag: ${movie.tags}"><a class="movie-tags"
 						th:href="@{/tag(id=${tag.id})}"> <span th:text="${tag.name}" />
-					</a>
-						<button name="tagId" th:value="${tag.id}"
-							th:formaction="@{/deleteTag}">Delete Tag</button></li>
+							<button name="tagId" th:value="${tag.id}"
+								th:formaction="@{/deleteTag}">Delete Tag</button></a></li>
 				</ul>
 			</form>
-
+		</div>
+		<div>
 			<form method="POST">
-				<input name="id" type="hidden" th:value="${movie.id}" /> <label>Add
-					Tag: <input type="text" name="name" />
+				<input name="id" type="hidden" th:value="${movie.id}" /> <label
+					class="add-tag"> <input type="text" name="name" />
 				</label>
 				<button th:formaction="@{/createTag}">Add Tag</button>
 			</form>
-		</h2>
+		</div>
 	</article>
 
 

@@ -26,13 +26,13 @@ a {
 	<h1>Keith's Movie Lounge List of Tags</h1>
 
 	<h2>Select tag:</h2>
-	<article class="tag-list">
+	<div class="tagcloud01">
 		<ul>
 			<li class="tag-tag" th:each="tag: ${tags}"><a
 				th:href="@{/tag(id=${tag.id})}"> <span th:text="${tag.name}" />
 			</a></li>
 		</ul>
-	</article>
+	</div>
 </body>
 <footer class="footer">
 	<p class="signature">Posted by Keith Kulwicki 2017</p>
