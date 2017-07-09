@@ -3,6 +3,12 @@
 <head>
 <title>Tags</title>
 <link rel="stylesheet" type="text/css" href="/css/style.css"></link>
+<style>
+a {
+	text-decoration: none;
+	color: #F0E68C;
+}
+</style>
 </head>
 <body>
 	<div class="nav-wrapper">
@@ -19,10 +25,12 @@
 	</div>
 	<h1>Keith's Movie Lounge List of Tags</h1>
 
-	<h2>Tags:</h2>
-	<article>
-		<ul class="tag-content">
-			<li th:each="tag: ${tags}"><span th:text="${tag.name}"></span></li>
+	<h2>Select tag:</h2>
+	<article class="tag-list">
+		<ul>
+			<li class="tag-tag" th:each="tag: ${tags}"><a
+				th:href="@{/tag(id=${tag.id})}"> <span th:text="${tag.name}" />
+			</a></li>
 		</ul>
 	</article>
 </body>

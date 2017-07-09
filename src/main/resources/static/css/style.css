@@ -164,8 +164,9 @@ h2 {
 	box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
 	margin-left: 50px;
 }
-
-.tag-content {
+/*  Tag List*/
+.tag-list {
+	text-decoration: none;
 	margin-left: 50px;
 	font-family: "Arial Narrow", Arial, sans-serif;
 	font-style: italic;
